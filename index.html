@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>News Aggregator</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap">
+</head>
+
+<body>
+  <header>
+    <h1>News Aggregator</h1>
+    <nav>
+      <ul>
+        <i class="fa-sharp fa-solid fa-house"></i>
+        <li><a href="index.html">Home</a></li>
+        <i class="fa-sharp fa-solid fa-earth-americas"></i>
+        <a href="#" onclick="toggleOption1(event)">World</a>
+
+<div id="option1" style="display: none;">
+<a href="https://timesofindia.indiatimes.com/world">Times of india</a>
+<a href="https://www.thehindu.com/news/international/">Hindu news</a>
+<a href="https://www.ndtv.com/world-news#pfrom=home-ndtv_mainnavgation">Ndtv news</a>
+</div>
+
+<script>
+  function toggleOption1(event) {
+    event.preventDefault();
+    var option1 = document.getElementById("option1");
+    if (option1.style.display === "none") {
+      option1.style.display = "block";
+    } else {
+      option1.style.display = "none";
+    }
+  }
+  </script>
+        <i class="fa-sharp fa-solid fa-car-side"></i>
+       <a href="#" onclick="toggleOption2(event)">Automobile</a>
+  <div id="option2" style="display: none;">
+  <a href="https://timesofindia.indiatimes.com/auto">Times of india</a>
+  <a href="https://auto.hindustantimes.com/">Hindustan times </a>
+  <a href="https://www.indiatoday.in/auto">India today</a>
+  <a href="https://www.gadgets360.com/auto">Ndtv news</a>
+  
+  </div> 
+  <script>
+    function toggleOption2(event) {
+      event.preventDefault();
+      var option2 = document.getElementById("option2");
+      if (option2.style.display === "none") {
+        option2.style.display = "block";
+      } else {
+        option2.style.display = "none";
+      }
+    }
+    </script>
+      <i class="fa-sharp fa-solid fa-tachograph-digital"></i>
+      <a href="#" onclick="toggleOption3(event)">Technology</a>
+  <div id="option3" style="display: none;">
+    <a href="https://www.gadgetsnow.com/?utm_source=toiweb&utm_medium=referral&utm_campaign=toiweb_hptopnav">Times of india</a>
+    <a href="https://www.thehindu.com/sci-tech/technology/">Hindu news </a>
+    <a href="https://indianexpress.com/section/technology/">Indian express</a>
+    <a href="https://www.gadgets360.com/#pfrom=sports-header-globalnav">Ndtv news</a>
+    
+  </div>
+  <script>
+    function toggleOption3(event) {
+      event.preventDefault();
+      var option3 = document.getElementById("option3");
+      if (option3.style.display === "none") {
+        option3.style.display = "block";
+      } else {
+        option3.style.display = "none";
+      }
+    }
+    </script>
+        <i class="fa-sharp fa-solid fa-tv"></i>
+        
+        <a href="#" onclick="toggleOption4(event)">Entertainment</a>
+  <div id="option4" style="display: none;">
+    <a href="https://indianexpress.com/section/entertainment/">Indian express</a>
+    <a href="https://www.thehindu.com/entertainment/">Hindu news </a>
+    <a href="https://timesofindia.indiatimes.com/etimes">Times of india</a>
+    
+    
+    </div> 
+    <script>
+      function toggleOption4(event) {
+        event.preventDefault();
+        var option4 = document.getElementById("option4");
+        if (option4.style.display === "none") {
+          option4.style.display = "block";
+        } else {
+          option4.style.display = "none";
+        }
+      }
+      </script>
+  
+  
+  
+   
+        <i class="fa-sharp fa-solid fa-medal"></i>
+        <a href="https://timesofindia.indiatimes.com/sports" onclick="toggleOptions(event)">Sports</a>
+<div id="options" style="display: none;">
+  <!-- Additional options here -->
+ 
+  <style>
+    .options-container {
+      display: none;
+      margin-top: 10px;
+    }
+  
+    .option {
+      display: block;
+      padding: 5px;
+      color: white;
+      background-color: dodgerblue;
+      text-decoration: none;
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+  </style>
+  <a href="#" onclick="togglereferance1(event)">Cricket</a>
+<div id="referance1" style="display: none;">
+  <a href="https://timesofindia.indiatimes.com/sports/cricket">Times of India</a>
+  <a href="https://www.thehindu.com/sport/cricket/">Hindu News</a>
+  <a href="https://indianexpress.com/section/sports/ipl/">indian express</a>
+  <a href="https://www.espn.in/cricket/">Espn news</a>
+  <a href="https://www.skysports.com/cricket">Sky sports</a>
+</div>
+
+<script>
+function togglereferance1(event) {
+  event.preventDefault();
+  var referance1 = document.getElementById("referance1");
+  if (referance1.style.display === "none") {
+    referance1.style.display = "block";
+  } else {
+    referance1.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance2(event)">Hockey</a>
+<div id="referance2" style="display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/hockey">Times of india</a>
+  <a href="https://www.thehindu.com/sport/hockey/">Hindu news</a>
+  <a href="https://www.hockeyindia.org/news">Hockey india</a>
+  <a href="https://sports.ndtv.com/hockey/news">Ndtv news</a>
+  <a href="https://www.espn.in/field-hockey/">Espn</a>
+</div>
+<script>
+  function togglereferance2(event) {
+  event.preventDefault();
+  var referance2 = document.getElementById("referance2");
+  if (referance2.style.display === "none") {
+    referance2.style.display = "block";
+  } else {
+    referance2.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance3(event)">Tennis</a>
+<div id="referance3" style="display: none;">
+  <a href="https://timesofindia.indiatimes.com/sports/tennis">Times of india</a>
+  <a href="https://www.thehindu.com/sport/tennis/">Hindu news</a>
+  <a href="https://www.thehindu.com/sport/tennis/">Ndtv news</a>
+  <a href="https://www.skysports.com/tennis">skysports</a> 
+  <a href="https://www.espn.in/tennis/">Espn</a> 
+
+</div>
+<script>
+  function togglereferance3(event) {
+  event.preventDefault();
+  var referance3 = document.getElementById("referance3");
+  if (referance3.style.display === "none") {
+    referance3.style.display = "block";
+  } else {
+    referance3.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance4(event)">Football</a>
+<div id="referance4" style="display: none;">
+  <a href="https://timesofindia.indiatimes.com/sports/football">Times of india</a>
+  <a href="https://www.thehindu.com/sport/football/">Hindu news</a>
+  <a href="https://sports.ndtv.com/football">Ndtv news</a>
+  <a href="https://www.skysports.com/football">Skysports</a>
+  <a href="https://www.espn.in/football/">Espn</a>
+</div>
+<script>
+  function togglereferance4(event) {
+  event.preventDefault();
+  var referance4 = document.getElementById("referance4");
+  if (referance4.style.display === "none") {
+    referance4.style.display = "block";
+  } else {
+    referance4.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance5(event)">Badminton</a>
+<div id="referance5" style=" display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/badminton">Times of india</a>
+  <a href="https://sports.ndtv.com/badminton">Ndtv news</a>
+  <a href="https://www.espn.in/badminton/">Espn</a>
+</div>
+<script>
+  function togglereferance5(event) {
+  event.preventDefault();
+  var referance5 = document.getElementById("referance5");
+  if (referance5.style.display === "none") {
+    referance5.style.display = "block";
+  } else {
+    referance5.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance6(event)">Athletics</a>
+<div id="referance6" style=" display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/more-sports/athletics">Times of india</a>
+  <a href="https://www.thehindu.com/sport/athletics/">Hindu news</a>
+  <a href="https://www.espn.in/athletics/">Espn</a>
+</div>
+<script>
+  function togglereferance6(event) {
+  event.preventDefault();
+  var referance6 = document.getElementById("referance6");
+  if (referance6.style.display === "none") {
+    referance6.style.display = "block";
+  } else {
+    referance6.style.display = "none";
+  }
+}
+</script>
+
+
+<a href="#" onclick="togglereferance7(event)">chess</a>
+<div id="referance7" style=" display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/chess">Times of india</a>
+  <a href="https://sports.ndtv.com/chess/news">Ndtv news</a>
+  <a href="https://www.espn.in/chess/">Espn</a>
+</div>
+<script>
+  function togglereferance7(event) {
+  event.preventDefault();
+  var referance7 = document.getElementById("referance7");
+  if (referance7.style.display === "none") {
+    referance7.style.display = "block";
+  } else {
+    referance7.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance8(event)">wrestling</a>
+<div id="referance8" style=" display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/more-sports/wrestling">Times of india</a>
+  <a href="https://sports.ndtv.com/wrestling">Ndtv news</a>
+  <a href="https://www.espn.in/wrestling/">Espn</a>
+</div>
+<script>
+  function togglereferance8(event) {
+  event.preventDefault();
+  var referance8 = document.getElementById("referance8");
+  if (referance8.style.display === "none") {
+    referance8.style.display = "block";
+  } else {
+    referance8.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance9(event)">boxing</a>
+<div id="referance9" style=" display:none;">
+  <a href="https://timesofindia.indiatimes.com/sports/boxing/articlelist/3413166.cms">Times of india</a>
+  <a href="https://sports.ndtv.com/boxing">Ndtv news</a>
+  <a href="https://www.skysports.com/boxing">Skysports</a>
+  <a href="https://www.espn.in/boxing/">Espn</a>
+</div>
+<script>
+  function togglereferance9(event) {
+  event.preventDefault();
+  var referance9 = document.getElementById("referance9");
+  if (referance9.style.display === "none") {
+    referance9.style.display = "block";
+  } else {
+    referance9.style.display = "none";
+  }
+}
+</script>
+
+<a href="#" onclick="togglereferance10(event)">Olympics</a>
+<div id="referance10" style=" display:none;">
+  <a href="https://www.espn.in/olympics/">Espn</a>
+  <a href="https://olympics.com/en/">olympics.com</a>
+</div>
+<script>
+  function togglereferance10(event) {
+  event.preventDefault();
+  var referance10 = document.getElementById("referance10");
+  if (referance10.style.display === "none") {
+    referance10.style.display = "block";
+  } else {
+    referance10.style.display = "none";
+  }
+}
+</script>
+</div>
+
+<script>
+function toggleOptions(event) {
+  event.preventDefault();
+  var options = document.getElementById("options");
+  if (options.style.display === "none") {
+    options.style.display = "block";
+  } else {
+    options.style.display = "none";
+  }
+}
+</script>
+
+
+        <!-- <div class="search">
+          <input type="text" name="search" id="search" placeholder="search the website">
+        </div> -->
+        
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="featured">
+      <h1  font-size:50px>Featured Stories </h1>
+      <h2></h2>
+      <div class="story">
+
+        <img src="pbl.jpg" width="800px" height="500px" alt="Featured Story Image">
+
+        <model-viewer src="global-technology-earth-news-bulletin-background_1017-33687.avif"
+          alt="featured story image"></model-viewer>
+        </div>
+    </section>
+    <h1>Latest News</h1>
+    <h2></h2>
+    <div id="news-container"></div>
+    
+  </form>
+  <section id="latest">
+    <div id="news-container"></div>
+    
+  </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 News Aggregator</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

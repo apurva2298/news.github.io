@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border-color: #abb4b9;
+  border-radius: 0px;
+  font-family: 'EB Garamond';
+  /* border: skyblue 2px solid; */
+  /* max-width: max-content; */
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #060708;
+  color: #3cb8a1eb;
+  /* padding: 0px; */
+  border: yellow 2px solid;
+}
+
+h1 {
+  margin: 10px;
+  padding-left: 20px;
+
+}
+
+h2 {
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+  margin: 1px;
+  padding: 10px;
+
+}
+
+.search {
+  /* float: right; */
+  font-size: 10px;
+  padding: 0px 33px;
+  /* margin: 3px; */
+  /* border: skyblue 2px solid; */
+  position: relative;
+  left: 600px;
+  ;
+  bottom: 15px;
+
+}
+/* styles.css */
+#news-container {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* .search{
+        float: right;
+        padding: 0px 15px;
+        color: white;
+        font-size: 25px ;
+      } */
+      
+      .outer-button {
+        position: relative;
+      }
+      
+      .inner-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 30px solid skyblue;
+}
+
+.story {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
